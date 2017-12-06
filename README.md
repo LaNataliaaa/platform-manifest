@@ -1,4 +1,6 @@
-# PureZ AOSP ROM Project
+<img src="https://s20.postimg.org/vpbav0vq5/Pure_Z-_Logo.png" />
+
+# PureZ ROM Development Project
 
 # Based on Pure AOSP
 
@@ -36,9 +38,8 @@ PureZ ROM Project for Google Nexus Devices : Google Nexus 5X, Nexus 6 and Nexus 
 - Status Bar Icons On/Off
 - and More Features
 
-<img src="https://s20.postimg.org/vpbav0vq5/Pure_Z-_Logo.png" height="100%" width="100%;"/>
-
 PureZAndroid //Stability with Features For You// 
+
 
 ZawZaw,
 
