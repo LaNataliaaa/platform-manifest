@@ -1,57 +1,45 @@
-<img src="https://s20.postimg.org/mc2gzbibx/Android-_Open-_Source-_Project.jpg" height="100%" width="100%;"/>
+# PureZ AOSP ROM Project
 
-# AOSP
-# Android Open Source Project
+# Based on Pure AOSP
 
-My Personal Android Open Source Project (AOSP) SourceCode For building Custom Pure Android OS
+PureZ ROM Project for Google Nexus Devices : Google Nexus 5X, Nexus 6 and Nexus 6P
 
-- I aimed for reducing Android SourceCode's fileszie for my personal AOSP Projects.
-- Removed unnecessary android repos - device trees, kernel prebuilts, system packages and more...
-- If you need Pure AOSP Sources, you can use this my personal GitHub Repo.
+- PureZ ROM Project is based on Pure AOSP SourceCode
+- PureZ ROM is my personal ROM Builds
+- PureZAndroid : //Stability with Features For You//
 
+## Features
+- Based on Pure AOSP latest Release
+- Root with Magisk Latest
+- Substratum/OMS Support
+- Debloated Package System Apps
+- Busybox Built-in Install
+- Google Pixel Features Included
+- Disabled Forced Encryption
+- Google Assistant Support
+- Pixel Launcher
+- Pixel Round Icons Support
+- Pixel Black Bootanimation
+- Pixel Blue Setting Icons
+- Pixel NavBar Style
+- Pixel Live Earth Wallpapers
+- Pixel Official Wallpapers Included
+- Pixel Live Data Wallpapers
+- Pixel Gesture Features
+- Google Official Stock Camera
+- Night Light Mode Support
+- Display Size/Font Size
+- SystemUI Tuner Support
+- NavBars Option Features
+- Battery Percentage Show/Hide
+- Clock and Date Show/Hide
+- Status Bar Icons On/Off
+- and More Features
 
-## How To Build Pure AOSP ROM For Your Android Device
+<img src="https://s20.postimg.org/vpbav0vq5/Pure_Z-_Logo.png" height="100%" width="100%;"/>
 
-To get started with AOSP sources to build ROM, you'll need to get
-familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+PureZAndroid //Stability with Features For You// 
 
+ZawZaw,
 
-To initialize your local repository using the AOSP trees to build ROM:
-
-    repo init -u https://github.com/zawzaww/aosp-android.git -b android-8.0.0
-
-To initialize a shallow clone, which will save even more space, use a command like this:
-
-    repo init --depth=1 -u https://github.com/zawzaww/aosp-android.git -b android-8.0.0
-
-
-Then to downloading the source:
-```bash
-repo sync
-```
- (OR)
-```bash
-repo sync -j$(nproc --all)
-```
- (OR)
-```bash
-repo sync --force-sync
-```
-
-After syncing is done, use these commands to build:
-```bash
-cd <source-dir>
-
-. build/envsetup.sh
-
-lunch <device_name>
-
-make -j4 (OR) make -j$(nproc --all)
-```   
-   
-Explanation:
-Build everything with make. GNU make can handle parallel tasks with a -jN argument, and it's common to use a number of tasks N that's between 1 and 2 times the number of hardware threads on the computer being used for the build. For example, on a dual-E5520 machine (2 CPUs, 4 cores per CPU, 2 threads per core), the fastest builds are made with commands between make -j16 and make -j32.
-
-<center><img src="http://androiddeveloper.galileo.edu/wp-content/uploads/2017/04/android-open-source-project-e1493408015792.png" height="54%" width="54%;"/></center>
-
-// Contributed by: ZawZaw [@xda-developers](https://forum.xda-developers.com/member.php?u=7581611)
+Developer/Contributor of PureZAndroid.

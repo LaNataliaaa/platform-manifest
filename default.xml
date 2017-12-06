@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- AOSP Remote -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/"
+          review="https://android-review.googlesource.com/" />
 
-  <!-- AOSP remote -->
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
+  <!-- GitHub Remote -->
+  <remote name="github"
+          fetch="https://github.com/" />
 
-  <!-- GitHub remote -->
-  <remote  name="github"
-           fetch="https://github.com/" />
+  <!-- PureZ Remote -->
+  <remote name="purez"
+          fetch="https://github.com/purezandroid/" />
 
-  <!-- AOSP branch name / android release -->         
+  <!-- AOSP Andorid Version Realese -->
   <default revision="refs/tags/android-8.0.0_r36"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+
+  <!-- PureZ Repos -->
+  <!-- Device trees -->
+  <project path="device/lge/bullhead" name="device-lge-bullhead" remote="purez" revision="oreo" />
+  <project path="device/moto/shamu" name="device-moto-shamu" remote="purez" revision="oreo" />
+  <project path="device/huawei/angler" name="device-huawei-angler" remote="purez" revision="oreo" />
+  <!-- Kernel trees -->
+  <project path="kernel/lge/bullhead" name="purez-kernel-bullhead" remote="purez" revision="oreo" />
+  <project path="kernel/moto/shamu" name="purez-kernel-shamu" remote="purez" revision="nougat" />
+  <project path="kernel/huawei/angler" name="purez-kernel-angler" remote="purez" revision="oreo" />
+
+  <!-- Substratum/OMS Support -->
+  <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 
   <!-- AOSP Repos -->
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -625,6 +641,7 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
+  
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- Removed AOSP Repos -->
